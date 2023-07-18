@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --clr-bg: #010511;
+    --clr-card-bg: #0A101F;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-design: #00FFFF;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase-;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 5rem;
+}
+h3,
+h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+img {
+    cursor: pointer;
+    display: inline-block;
+}
+
+body {
+    font-size: 62.5%;
+    height: 100vh;
+    background-color: var(--clr-bg);
+    /* background-color: red; */
+    /* background-image: url(../images/Valorant-Boys-Background-Image.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    object-fit: cover; */
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+}
+.header {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--clr-design);
+    position: relative;
+}
+.header::before {
+    content: '';
+    background-color: var(--clr-card-bg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .90;
+    z-index: -1;
+}
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.logo a {
+    color: var(--clr-white);
+    letter-spacing: .3rem;
+}
+
+span {
+    color: var(--clr-design);
+    letter-spacing: .1rem;
+}
+
+.nav-lists {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.7rem;
+}
+.nav-lists li a {
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.hero-section .hero-img img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    border-radius: 1rem;
+    /* margin-top: 1rem; */
+}
+.hero-section .hero-heading,
+.hero-para {
+    color: var(--clr-white);
+}
+.hero-heading h1 {
+    width: 100%;
+    font-size: 7rem;
+    font-weight: 700;
+    border-left: 3px solid var(--clr-design);
+    border-right: 3px solid var(--clr-design);
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+.hero-section .hero-para {
+    width: 50%;
+    text-align: justify;
+}
+.player-section-article {
+    color: var(--clr-white);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.player-section-article h2 {
+    display: inline;
+    border-left: 3px solid var(--clr-design);
+    border-right: 3px solid var(--clr-design);
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+.players-section .player-card {
+    color: var(--clr-white);
+}
+.player-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.player-card img {
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+/* Abdullah Al Nakib Start*/
+
+.player-card .player-card-abdullah-al-nakib{
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.abdullah-al-nakib {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-abdullah-al-nakib-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-abdullah-al-nakib-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+
+/* Abdullah Al Nakib End*/
+
+/* RT Rabby Start*/
+.player-card .player-card-rt-rabby {
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.rt-rabby {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-rt-rabby-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-rt-rabby-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+/* RT Rabby End*/
+
+/* Mahedi Hasan Sani Start */
+.player-card .player-card-mehedi-hasan-sani {
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.mehedi-hasan-sani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-mehedi-hasan-sani-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-mehedi-hasan-sani-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+/* Mahedi Hasan Sani End */
+
+/* Aditta Debnath Start*/
+.player-card .player-card-aditta-debnath {
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.aditta-debnath {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-aditta-debnath-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-aditta-debnath-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+/* Aditta Debnath End*/
+
+/* Niloy Mallick Start */
+.player-card .player-card-niloy-mallick {
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.niloy-mallick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-niloy-mallick-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-niloy-mallick-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+/* Niloy Mallick End */
+
+/* Shoumo Shuvro Start */
+.player-card .player-card-shoumo-shuvro-mallick {
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.shoumo-shuvro-mallick {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-shoumo-shuvro-mallick-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-shoumo-shuvro-mallick-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+/* Shoumo Shuvro End */
+
+/* Ubaid Hasan Start */
+.player-card .player-card-ubaid-hasan {
+    text-align: center;
+    margin: 1rem auto;
+    width: 725px;
+    border-radius: 1rem;
+}
+.ubaid-hasan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+}
+.player-card-ubaid-hasan-img {
+    background-color: var(--clr-card-bg);
+    width: 725px;
+    height: 500px;
+    overflow: hidden;
+}
+.player-card-ubaid-hasan-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+/* Ubaid Hasan Start */
+
+/* Muhammad Imran Hasan Start */
+.muhammad-imran-hasan {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 3rem auto;
+    background-color: var(--clr-card-bg);
+}
+.player-card-muhammad-imran-hasan-img {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.player-card-muhammad-imran-hasan-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: top cover;
+}
+.muhammad-imran-hasan h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+/* Muhammad Imran Hasan End */
+.player {
+    border: 3px solid var(--clr-design);
+}
+.footer-container {
+    width: 100%;
+    height: 100px;
+    background-color: var(--clr-card-bg);
+}
+.footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.footer-container,
+.footer-heading {
+    color: var(--clr-white);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.footer-container .copy-right {
+    font-size: 20px;
+}
